@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scratch 2.0</title>
     <style>
-        html, body {
+        body, html {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -16,12 +15,17 @@
         object {
             width: 100%;
             height: 100%;
+            display: block;
         }
     </style>
+    <title>Scratch 2</title>
 </head>
 <body>
     <object type="application/x-shockwave-flash" data="Scratch.swf">
-        <param name="movie" value="Scratch.swf">
+        <param name="movie" value="Scratch.swf" />
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#ffffff" />
+        <!-- Other optional parameters -->
     </object>
 </body>
    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
