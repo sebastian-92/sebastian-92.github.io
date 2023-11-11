@@ -1,5 +1,28 @@
-   <object data="Scratch.swf" width="100%" height="100%">
-      <param name="movie" value="scratch.swf">
-      <p>SOMETHING WENT WRONG</p>
-   </object>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Flash Example</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        object {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <object type="application/x-shockwave-flash" data="your_flash_file.swf">
+        <param name="movie" value="Scratch.swf">
+    </object>
+</body>
    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</html>
