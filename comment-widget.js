@@ -8,7 +8,7 @@
 
     After filling out your options, just paste this anywhere you want a comment section
     (But change the script src URL to wherever you have this widget stored on your site!)
-https://docs.google.com/forms/d/e/1FAIpQLSd2evvFWnVp1Sdvv7Eucah91qffzi_xziHatxpK3f6kaOKQNg/viewform?usp=pp_url&entry.664103297=Name&entry.1394927891=Website&entry.1217615441=Text&entry.278754493=Page&entry.338039413=Reply
+
         <div id="c_widget"></div>
         <script src="comment-widget.js"></script>
 
@@ -17,7 +17,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSd2evvFWnVp1Sdvv7Eucah91qffzi_xziHatxpK
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = 'PATH HERE';
+const s_stylePath = 'comment-widget-dark.css';
 const s_formId = '1FAIpQLSd2evvFWnVp1Sdvv7Eucah91qffzi_xziHatxpK3f6kaOKQNg';
 const s_nameId = '664103297';
 const s_websiteId = '1394927891';
@@ -36,9 +36,9 @@ const s_dstEnd = ['November', 'Sunday', 1, 2]; // Example shown is the first Sun
 // Misc - Other random settings
 const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
 const s_maxLength = 500; // The max character length of a comment
-const s_maxLengthName = 30; // The max character length of a name
+const s_maxLengthName = 16; // The max character length of a name
 const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
-const s_collapsedReplies = false; // True for collapsed replies with a button, false for replies to display automatically
+const s_collapsedReplies = true; // True for collapsed replies with a button, false for replies to display automatically
 const s_longTimestamp = false; // True for a date + time, false for just the date
 let s_includeUrlParameters = false; // Makes new comment sections on pages with URL parameters when set to true (If you don't know what this does, leave it disabled)
 const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make the index page and page 1 of your webcomic have the same comment section
@@ -51,20 +51,20 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'Leave a comment!';
+const s_widgetTitle = "Cbass92's guestbook";
 const s_nameFieldLabel = 'Name';
 const s_websiteFieldLabel = 'Website (Optional)';
 const s_textFieldLabel = '';
-const s_submitButtonLabel = 'Submit';
-const s_loadingText = 'Loading comments...';
+const s_submitButtonLabel = 'SEND';
+const s_loadingText = 'Loading guestbook...';
 const s_noCommentsText = 'No comments yet!';
 const s_closedCommentsText = 'Comments are closed temporarily!';
 const s_websiteText = 'Website'; // The links to websites left by users on their comments
 const s_replyButtonText = 'Reply'; // The button for replying to someone
 const s_replyingText = 'Replying to'; // The text that displays while the user is typing a reply
 const s_expandRepliesText = 'Show Replies';
-const s_leftButtonText = '<<';
-const s_rightButtonText = '>>';
+const s_leftButtonText = '<-';
+const s_rightButtonText = '->';
 
 /*
     DO NOT edit below this point unless you are confident you know what you're doing!
@@ -386,6 +386,7 @@ function createComment(data) {
     if (data.Website) {
         let site = document.createElement('a');
         site.innerText = s_websiteText;
+        site.target = "_blank"
         site.href = data.Website;
         site.className = 'c-site';
         comment.appendChild(site);

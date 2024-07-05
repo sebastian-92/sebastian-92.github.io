@@ -7,17 +7,18 @@
         background-color: #fb00ff;
         color: #ffff;
         font-family: Arial, sans-serif;
-        text-align: left; /* Center align the text in the body */
-        margin: 0; /* Remove default margin */
+        text-align: left; 
+        margin: 0; 
   font-weight: bold;
   background-image: url("bg.gif");
   background-repeat: repeat;
+  justify-content: center;
     }
 
     header {
         background-color: #2300ff;
         padding: 20px;
-        text-align: center; /* Center align the content in the header */
+        text-align: center;
     }
 
     h1 {
@@ -33,12 +34,16 @@
 
     .container {
         display: flex;
+flex-direction: row;
+max-width: 70%;
+margin: auto;
 
     }
-a {
-text-decoration: none;
-color: red;
-}
+
+    a {
+    text-decoration: none;
+    color: red;
+    }
     .about-me {
         flex: 1;
         padding: 20px;
@@ -58,6 +63,12 @@ color: red;
         text-decoration: none; 
     }
 </style>
+<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+<script>
+window.addEventListener("load", (event) => {
+  new cursoreffects.fairyDustCursor();
+});
+</script>
 </head>
 <body>
 
@@ -123,15 +134,15 @@ color: red;
 <br>
 <a href="guestbook.html" style="display: inline-block;" ><img style="display: inline-block;" src="signguestbook.gif"/></a><br>
 <h2>Buttons</h2>
-<img src="/buttons/anarchy1.gif" /><img src="/buttons/awesome.gif" /><img src="/buttons/best_ns.gif" /><img src="/buttons/nocookie.gif" /><img src="/buttons/spdy-now.gif" />
+<img src="/buttons/anarchy1.gif" /><img src="/buttons/88by31.gif" /><img src="/buttons/hell0.gif" /><img src="/buttons/piracy.gif" /><img src="/buttons/planetb.gif" /><img src="/buttons/thevoid.gif" /><img src="/buttons/awesome.gif" /><img src="/buttons/notepad3.gif" /><img src="/buttons/best_ns.gif" /><img src="/buttons/nocookie.gif" /><img src="/buttons/spdy-now.gif" />
     </div>
 <br>
 </div>
 
 </div>
-<footer>
-<img src="flames.gif" style="width: 100%; height: auto;" />
-</footer>
+<img src="flames.gif" style="width: 50%; height: auto;  display: block;
+  margin-left: auto;
+  margin-right: auto;" />
 <script async defer src="https://buttons.github.io/buttons.js" type="text/javascript"></script>
 
 </body>

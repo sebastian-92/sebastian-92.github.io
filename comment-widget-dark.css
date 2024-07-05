@@ -52,14 +52,15 @@
         #c_leftButton - The left <button>
         #c_rightButton - The right <button>
 */
-
+body {
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+}
 /* Main */
 #c_widget {
-    box-sizing: border-box;
-    height: 100%;
+    height: auto;
+    width: 100%;
     overflow: auto;
-    padding: 20px;
-    background-image: url('sparkle-bg.gif'); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
     background-attachment: fixed;
     font-family: 'Courier New';
     font-size: 16px;
@@ -101,13 +102,13 @@
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
     background-color: #2D0B52;
 }
 
 .c-inputWrapper {
     display: block;
-    text-align: right;
+    text-align: left;
 }
 .c-input {
     padding: 4px;
@@ -129,7 +130,7 @@
 }
 #c_replyingText {
     color: white;
-    text-align: right;
+    text-align: left;
 }
 
 /* Comment section */
@@ -182,7 +183,7 @@
     padding: 10px;
     font-family: Verdana;
     font-size: 14px;
-    text-align: justify;
+    text-align: left;
     color: white;
     background-color: black;
 }
