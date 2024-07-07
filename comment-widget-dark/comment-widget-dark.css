@@ -55,149 +55,163 @@
 
 /* Main */
 #c_widget {
-    box-sizing: border-box;
-    height: 100%;
-    overflow: auto;
-    padding: 20px;
-    background-image: url('sparkle-bg.gif'); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
-    background-attachment: fixed;
-    font-family: 'Courier New';
-    font-size: 16px;
-    color: white;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  background-image: url("sparkle-bg.gif"); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
+  background-attachment: fixed;
+  font-family: "Courier New";
+  font-size: 16px;
+  color: white;
 }
 
-#c_widget button, #c_widget input[type=submit] {
-    padding: 4px;
-    font-family: 'Courier New';
-    text-decoration: none;
-	text-align: center;
-    text-transform: uppercase;
-    background-color: black;
-    color: #B766FF;
-    border: 1px solid white;
+#c_widget button,
+#c_widget input[type="submit"] {
+  padding: 4px;
+  font-family: "Courier New";
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  color: #b766ff;
+  border: 1px solid white;
 }
-#c_widget button:hover, #c_widget input[type=submit]:hover {
-    color: white;
-    border: 1px solid #B766FF;
+#c_widget button:hover,
+#c_widget input[type="submit"]:hover {
+  color: white;
+  border: 1px solid #b766ff;
 }
-#c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
-#c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
-    color: #B766FF;
-    border: 1px solid white;
+#c_widget button:disabled,
+#c_widget input[type="submit"]:disabled {
+  opacity: 60%;
+}
+#c_widget button:disabled:hover,
+#c_widget input[type="submit"]:disabled:hover {
+  color: #b766ff;
+  border: 1px solid white;
 }
 
 /* Input section */
 #c_inputDiv {
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: black;
-    border: 2px solid white;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: black;
+  border: 2px solid white;
 }
 
 #c_widgetTitle {
-    margin: -10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: bold;
-    text-align: right;
-    background-color: #2D0B52;
+  margin: -10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  background-color: #2d0b52;
 }
 
 .c-inputWrapper {
-    display: block;
-    text-align: right;
+  display: block;
+  text-align: right;
 }
 .c-input {
-    padding: 4px;
-    color: black;
-    border: 1px solid #2D0B52;
-	outline: none;
+  padding: 4px;
+  color: black;
+  border: 1px solid #2d0b52;
+  outline: none;
 }
-.c-input:focus {border: 1px solid #B766FF;}
+.c-input:focus {
+  border: 1px solid #b766ff;
+}
 
 .c-textInput {
-    width: calc(100% - 10px);
-    max-width: 900px;
-    resize: none;
+  width: calc(100% - 10px);
+  max-width: 900px;
+  resize: none;
 }
 #c_submitButton {
-    display: block; 
-    margin-left: auto; 
-    margin-right: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
 }
 #c_replyingText {
-    color: white;
-    text-align: right;
+  color: white;
+  text-align: right;
 }
 
 /* Comment section */
 .c-comment {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid white;
-    background-color: #2D0B52; 
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: #2d0b52;
 }
 .c-reply {
-    display: block;
-    width: 90%;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: 0;
-    padding: 10px;
-    border: 2px solid white;
-    background-color: #2D0B52; 
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: #2d0b52;
 }
-.c-reply:last-child {margin-bottom: 0;}
+.c-reply:last-child {
+  margin-bottom: 0;
+}
 .c-replyContainer {
-    margin: -10px;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: black;
+  margin: -10px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: black;
 }
 
 .c-name {
-    display: inline-block;
-    margin: 0;
-    margin-right: 10px;
-    padding: 0;
-    text-transform: uppercase;
-    font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .c-site {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #B766FF;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #b766ff;
 }
-.c-site:hover {color: white;}
+.c-site:hover {
+  color: white;
+}
 .c-timestamp {
-    float: right;
-    opacity: 75%;
+  float: right;
+  opacity: 75%;
 }
 .c-text {
-    margin: 0;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding: 10px;
-    font-family: Verdana;
-    font-size: 14px;
-    text-align: justify;
-    color: white;
-    background-color: black;
+  margin: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px;
+  font-family: Verdana;
+  font-size: 14px;
+  text-align: justify;
+  color: white;
+  background-color: black;
 }
 
 /* Pagination */
-#c_pagination {text-align: center;}
+#c_pagination {
+  text-align: center;
+}
 .c-replyButton {
-    margin-top: 10px;
-    margin-right: 4px;
+  margin-top: 10px;
+  margin-right: 4px;
 }
 .c-expandButton {
-    margin-top: 10px;
-    margin-left: 4px;
+  margin-top: 10px;
+  margin-left: 4px;
 }
 .c-paginationButton {
-    margin-right: 4px;
-    margin-left: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
 }

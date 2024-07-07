@@ -1,0 +1,55 @@
+body {
+  background-color: #fb00ff;
+  color: #ffff;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+  justify-content: center;
+}
+td {
+  border: 3px solid purple;
+}
+table {
+  border: 3px solid purple;
+  background-color: red;
+}
+header {
+  background-color: #2300ff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0; /* Remove default margin */
+}
+
+p {
+  font-size: 18px;
+  margin: 20px;
+  color: #00ff0c;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 70%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #00ff0c;
+}
+.about-me {
+  flex: 1;
+  margin: 20px;
+}
+
+.container2 {
+  margin: 20px;
+  width: 15%;
+}
