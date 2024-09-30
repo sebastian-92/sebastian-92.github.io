@@ -10,6 +10,9 @@ body {
   justify-content: center;
 
 }
+html {
+    cursor: url(mouse.png), auto;
+    }
 td {
   border: 3px solid purple;
 }
