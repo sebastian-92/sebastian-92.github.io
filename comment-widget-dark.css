@@ -75,16 +75,16 @@ body {
     text-transform: uppercase;
     background-color: black;
     color: #B766FF;
-    border: 1px solid white;
+    border: 3px solid purple;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
     color: white;
-    border: 1px solid #B766FF;
+    border: 3px solid purple;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
     color: #B766FF;
-    border: 1px solid white;
+    border: 3px solid purple;
 }
 
 /* Input section */
@@ -92,7 +92,7 @@ body {
     margin-bottom: 15px;
     padding: 10px;
     background-color: black;
-    border: 2px solid white;
+    border: 3px solid purple;
 }
 
 #c_widgetTitle {
@@ -113,10 +113,10 @@ body {
 .c-input {
     padding: 4px;
     color: black;
-    border: 1px solid #2D0B52;
+    border: 3px solid purple;
 	outline: none;
 }
-.c-input:focus {border: 1px solid #B766FF;}
+.c-input:focus {border: 3px solid purple;}
 
 .c-textInput {
     width: calc(100% - 10px);
@@ -137,7 +137,7 @@ body {
 .c-comment {
     margin-bottom: 15px;
     padding: 10px;
-    border: 2px solid white;
+    border: 3px solid purple;
     background-color: #2D0B52; 
 }
 .c-reply {
@@ -147,7 +147,7 @@ body {
     margin-left: auto;
     margin-right: 0;
     padding: 10px;
-    border: 2px solid white;
+    border: 3px solid purple;
     background-color: #2D0B52; 
 }
 .c-reply:last-child {margin-bottom: 0;}
