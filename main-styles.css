@@ -1,7 +1,11 @@
+@font-face {
+  font-family: "phoenix";
+  src: url("fonts/phoenix-bios.woff") format('woff');
+}
 body {
-  background-color: #fb00ff;
+  background-color: #000000;
   color: #ffff;
-  font-family: Arial, sans-serif;
+  font-family: phoenix;
   text-align: left;
   margin: 0;
   font-weight: bold;
@@ -18,7 +22,7 @@ td {
 }
 table {
   border: 3px solid purple;
-  background-color: red;
+  background-color: rgb(43, 43, 43);
   margin:auto;
 }
 header {
