@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/95css@latest/css/95css.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <dialog open class="is-sm">
+      <a href="index.html"></a>
+      <h2 class="dialog-header"><a href='index.html' target="_top" style="text-decoration: none; color:deeppink;">*cbass92.org*</a></h2>
+      <div class="dialog-body">
+        <fieldset>
+          <legend>Navigation</legend>
+          <div class="input-group">
+            <a href="about.html" target="_top">About Me</a>
+            <a href="projects.html" target="_top">Projects</a>
+            <a href="books.html" target="_top">Cool Books</a>
+            <a href="music.html" target="_top">Cool Music</a>
+            <a href="links.html" target="_top">Cool Links (not me)</a>
+            <a href="fun.html" target="_top">Fun Stuff</a>
+            <a href="https://blog.cbass92.org" target="_top">Blog (uses astro)</a>
+            <a href="license.html" target="_top">License</a>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="input-group">
+            <a href="guestbook.html"
+              ><img src="signguestbook.gif" alt="SIGN THE GUESTBOOK!!"
+            /></a>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Random MIDI!</legend>
+          <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/html-midi-player@1.5.0"></script>
+          <label id="midi-title"></label>
+          <midi-player
+            id="random-midi-player"
+            sound-font
+            visualizer="none"
+            loop
+          ></midi-player>
+          <label
+            >midis are sourced from
+            <a href="https://midicities.com/">midicities.com</a> and
+            <a href="https://bitmidi.com/">bitmidi.com</a>!</label
+          >
+          <script>
+            const filelist = [
+              "73561_08.mid.mid",
+              "Puttin' on the Ritz.mid",
+              "980923.mid",
+              "Putting-On-The-Ritz.mid",
+              "Because_midicities_dot_com.mid",
+              "Queen - Bohemian Rhapsody.mid",
+              "Bonetrousle_midicities_dot_com.mid",
+              "Red Hot Chili Peppers - Californication.mid",
+              "Cold-As-Ice-2.mid",
+              "Spear Of Justice_midicities_dot_com.mid",
+              "DELTARUNE_-_Chapter_1_-_Field_of_Hopes_and_Dreams_-_ShinkoNetCavy.mid",
+              "THE BEATLES.Free as a bird K.mid",
+              "Dancing_Queen.mid",
+              "THE BEATLES.Hipy hippy shake.mid",
+              "Death By Glamour_midicities_dot_com.mid",
+              "The Beatles - I Am the Walrus.mid",
+              "Deltarune_FULL_SOUNDTRACK_TRANSCRIPTION.mid",
+              "Vanilla Ice - Ice Ice Baby.mid",
+              "Guns n Roses - Sweet Child O Mine.mid",
+              "beatles-live_and_let_die.mid",
+              "Metallica - Master Of Puppets.mid",
+              "doom.mid",
+              "Metallica - Nothing Else Matters.mid",
+              "i_want_to_hold_your_hand-beatles.mid",
+              "Michael Jackson - Billie Jean.mid",
+            ];
+            function playRandomMidi() {
+              if (filelist.length === 0) return;
+              const randomFile =
+                filelist[Math.floor(Math.random() * filelist.length)];
+              const playerElem = document.getElementById("random-midi-player");
+              playerElem.src = "midi/" + randomFile;
+              document.getElementById("midi-title").innerText = randomFile;
+            }
+            playRandomMidi();
+          </script>
+        </fieldset>
+        <fieldset><img src="buttons/me.gif" /></fieldset>
+        <fieldset><button class="is-sm" onclick="document.getElementById('linkhere').select(); document.execCommand('copy');">copy button</button><input id='linkhere' value="<a href='https://cbass92.org'><img src='https://cbass92.org/buttons/me.gif'/></a>"/></fieldset>
+      </div>
+    </dialog>
+  </body>
+</html>
+<!--
+  Made with 95.css - https://jdan.github.io/95.css/
+-->

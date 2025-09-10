@@ -53,152 +53,217 @@
         #c_rightButton - The right <button>
 */
 body {
-  background-image: url("bg.gif");
+  background: rgb(0, 136, 84);
+  background-image: url("background.png");
   background-repeat: repeat;
+  color: #00ff41;
+  font-family: "Fira Mono", monospace;
+  font-size: 1.2em;
 }
 /* Main */
 #c_widget {
-    height: auto;
-    width: 100%;
-    overflow: auto;
-    background-attachment: fixed;
-    font-family: 'Courier New';
-    font-size: 16px;
-    color: white;
+  height: auto;
+  max-width: 50%;
+  overflow: auto;
+  background-attachment: fixed;
+  font-family: "Fira Mono", monospace;
+  font-size: 1.2em;
+  color: #00ff41;
+  background: rgba(0, 0, 0, 0.95);
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00ff41;
 }
-
-#c_widget button, #c_widget input[type=submit] {
-    padding: 4px;
-    font-family: 'Courier New';
-    text-decoration: none;
-	text-align: center;
-    text-transform: uppercase;
-    background-color: black;
-    color: #B766FF;
-    border: 3px solid purple;
+#c_form {
+  max-width: 80%;
 }
-#c_widget button:hover, #c_widget input[type=submit]:hover {
-    color: white;
-    border: 3px solid purple;
+#c_widget button,
+#c_widget input[type="submit"] {
+  padding: 4px;
+  font-family: "Fira Mono", monospace;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(0, 136, 84);
+  color: #00ff41;
+  border: 2px solid #00ff41;
+  box-shadow: 0 0 5px #00ff41;
 }
-#c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
-#c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
-    color: #B766FF;
-    border: 3px solid purple;
+#c_widget button:hover,
+#c_widget input[type="submit"]:hover {
+  color: black;
+  background: #00ff41;
+  border: 2px solid #00ff41;
+}
+#c_widget button:disabled,
+#c_widget input[type="submit"]:disabled {
+  opacity: 60%;
+}
+#c_widget button:disabled:hover,
+#c_widget input[type="submit"]:disabled:hover {
+  color: #00ff41;
+  border: 2px solid #00ff41;
 }
 
 /* Input section */
 #c_inputDiv {
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: black;
-    border: 3px solid purple;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgb(0, 136, 84);
+  border: 2px solid #00ff41;
+  border-radius: 5px;
 }
 
 #c_widgetTitle {
-    margin: -10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: bold;
-    text-align: left;
-    background-color: #2D0B52;
+  margin: -10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  background-color: #111;
+  color: #00ff41;
+  border-bottom: 2px solid #00ff41;
 }
 
 .c-inputWrapper {
-    display: block;
-    text-align: left;
+  display: block;
+  text-align: left;
 }
 .c-input {
-    padding: 4px;
-    color: black;
-    border: 3px solid purple;
-	outline: none;
+  padding: 4px;
+  color: #00ff41;
+  background: rgb(0, 136, 84);
+  border: 2px solid #00ff41;
+  outline: none;
+  font-family: "Fira Mono", monospace;
 }
-.c-input:focus {border: 3px solid purple;}
+.c-input:focus {
+  border: 2px solid #00ff41;
+}
 
 .c-textInput {
-    width: calc(100% - 10px);
-    max-width: 900px;
-    resize: none;
+  width: calc(100% - 10px);
+  max-width: 900px;
+  resize: none;
+  background: rgb(0, 136, 84);
+  color: #00ff41;
+  font-family: "Fira Mono", monospace;
 }
 #c_submitButton {
-    display: block; 
-    margin-left: auto; 
-    margin-right: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
 }
 #c_replyingText {
-    color: white;
-    text-align: left;
+  color: #00ff41;
+  text-align: left;
+  font-family: "Fira Mono", monospace;
 }
 
 /* Comment section */
 .c-comment {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 3px solid purple;
-    background-color: #2D0B52; 
+  margin-bottom: 15px;
+  padding: 10px;
+  max-width: 80%;
+  border: 2px solid #00ff41;
+  background-color: #111;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00ff41;
 }
 .c-reply {
-    display: block;
-    width: 90%;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: 0;
-    padding: 10px;
-    border: 3px solid purple;
-    background-color: #2D0B52; 
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 10px;
+  border: 2px solid #00ff41;
+  background-color: #111;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00ff41;
 }
-.c-reply:last-child {margin-bottom: 0;}
+.c-reply:last-child {
+  margin-bottom: 0;
+}
 .c-replyContainer {
-    margin: -10px;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: black;
+  margin: -10px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(0, 136, 84);
+  border-radius: 5px;
 }
 
 .c-name {
-    display: inline-block;
-    margin: 0;
-    margin-right: 10px;
-    padding: 0;
-    text-transform: uppercase;
-    font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00ff41;
+  font-family: "Fira Mono", monospace;
 }
 .c-site {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #B766FF;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #00ff41;
+  font-family: "Fira Mono", monospace;
 }
-.c-site:hover {color: white;}
+.c-site:hover {
+  color: black;
+  background: #00ff41;
+}
 .c-timestamp {
-    float: right;
-    opacity: 75%;
+  float: right;
+  opacity: 75%;
+  color: #00ff41;
+  font-family: "Fira Mono", monospace;
 }
 .c-text {
-    margin: 0;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding: 10px;
-    font-family: Verdana;
-    font-size: 14px;
-    text-align: left;
-    color: white;
-    background-color: black;
+  margin: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px;
+  font-family: "Fira Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  color: #00ff41;
+  background-color: rgb(0, 136, 84);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00ff41;
 }
 
 /* Pagination */
-#c_pagination {text-align: center;}
+#c_pagination {
+  text-align: center;
+}
 .c-replyButton {
-    margin-top: 10px;
-    margin-right: 4px;
+  margin-top: 10px;
+  margin-right: 4px;
+  color: #00ff41;
+  background: rgb(0, 136, 84);
+  border: 2px solid #00ff41;
+  font-family: "Fira Mono", monospace;
 }
 .c-expandButton {
-    margin-top: 10px;
-    margin-left: 4px;
+  margin-top: 10px;
+  margin-left: 4px;
+  color: #00ff41;
+  background: rgb(0, 136, 84);
+  border: 2px solid #00ff41;
+  font-family: "Fira Mono", monospace;
 }
 .c-paginationButton {
-    margin-right: 4px;
-    margin-left: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  color: #00ff41;
+  background: rgb(0, 136, 84);
+  border: 2px solid #00ff41;
+  font-family: "Fira Mono", monospace;
+}
+body {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: bold;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="main-styles.css">
+<link rel="stylesheet" href="main-styles2.css">
 <style>
     * {
         overflow-wrap: break-word;
@@ -14,7 +14,7 @@
     <table width=100% id="commit-history">
         <thead>
             <tr>
-                <th>Date and Message</th>
+                <th>Commit Date and Message</th>
             </tr>
         </thead>
         <tbody>
@@ -48,9 +48,10 @@
                 commitHistoryTable.innerHTML = ''; 
 
                 commits.forEach(commit => {
-                    const row = document.createElement('tr');
+                    const row = document.createElement('div');
+                    row.className = 'grid-item grid-item--width2';
 
-                    const dateMessageCell = document.createElement('td');
+                    const dateMessageCell = document.createElement('div');
                     dateMessageCell.className = 'commit-date-message';
                     dateMessageCell.innerHTML = `
                         ${new Date(commit.commit.author.date).toLocaleDateString()}<br>
@@ -64,13 +65,13 @@
             })
             .catch(error => {
                 const commitHistoryTable = document.getElementById('commit-history').getElementsByTagName('tbody')[0];
-                commitHistoryTable.innerHTML = '<tr><td colspan="2">Failed to load commit history. Please try again later.</td></tr>';
+                commitHistoryTable.innerHTML = '<div class="grid-item"><div class="commit-date-message">Failed to load commit history. Please try again later.</div></div>';
                 console.error('Error fetching commit history:', error);
             });
         });
             } else {
                             const commitHistoryTable = document.getElementById('commit-history').getElementsByTagName('tbody')[0];
-                commitHistoryTable.innerHTML = '<tr><td colspan="2">Updates are off for maintenance</td></tr>'; 
+                commitHistoryTable.innerHTML = '<div class="grid-item"><div class="commit-date-message">Updates are off for maintenance</div></div>'; 
             }
     </script>
 </body>

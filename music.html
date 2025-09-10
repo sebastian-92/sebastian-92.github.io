@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>*cbass92.org* - Home</title>
+    <style>
+      .sidebar {
+        width: 350px;
+        height: 70vh;
+        border: none;
+        background: #111;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.4);
+        margin-left: 20px;
+        position: fixed;
+      }
+      html {
+        font-family: "Fira Mono", monospace;
+        font-weight: 400;
+        background-color: #111;
+        font-style: bold;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .grid {
+        position: fixed;
+        left: 20%;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main-styles2.css" />
+    <link rel="stylesheet" href="tracks.css" />
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script>
+      window.addEventListener("load", (event) => {
+        new cursoreffects.fairyDustCursor();
+      });
+    </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- 100% privacy-first analytics -->
+    <script
+      data-collect-dnt="true"
+      async
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+  </head>
+  <body>
+    <script src="oneko.js"></script>
+    <header>
+      <center><img width="15%" height="auto" src="welcome.gif" /></center>
+      <link href="mailto:indieauth@cbass92.org" rel="me authn" />
+    </header>
+    <marquee scrollamount="20"><img src="construction.gif" /></marquee>
+    <div class="content-layout">
+      <iframe class="sidebar" src="sidebar.html"></iframe>
+      <div
+        class="grid"
+        data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200, "gutter": 10 }'
+      >
+              <div class="grid-item">
+          <h2>Favorite Songs</h2>
+          <ul>
+            <li>Because - The Beatles</li>
+            <li>Nowhere Man - The Beatles</li>
+            <li>Breakfast In America - Supertramp</li>
+            <li>Space Oddity - David Bowie</li>
+            <li>The Adventures of Rain Dance Maggie - Red Hot Chili Peppers</li>
+            <li>Poster Child - Red Hot Chili Peppers</li>
+          </ul>
+        </div>
+
+        <div class="grid-item">
+          <h2>Favorite Artists</h2>
+          <ul>
+            <li>The Beatles</li>
+            <li>Queen</li>
+            <li>David Bowie</li>
+            <li>Red Hot Chili Peppers</li>
+            <li>Supertramp</li>
+            <li>Billy Joel</li>
+            <li>The Offspring</li>
+            <li>Chumbawamba</li>
+            <li>Weezer</li>
+            <li>Green Day</li>
+            <li>Guns N' Roses</li>
+            <li>George Harrison</li>
+            <li>Elton John</li>
+            <li>Talking Heads</li>
+            <li>Traveling Wilburys</li>
+            <li>Smash Mouth</li>
+            <li>The B52's</li>
+            <li>The Coasters</li>
+            <li>Sublime</li>
+            <li>Paul Simon</li>
+            <li>The Lost Fingers</li>
+            <li>"Weird Al" Yankovic</li>
+            <li>They Might Be Giants</li>
+            <li>R.E.M.</li>
+            <li>Fastball</li>
+            <li>ABBA</li>
+            <li>Ren</li>
+            <li>Metallica</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h2>Recent songs</h2>
+          <br />
+          <script src="lastfm.js" type="module"></script>
+          <lastfm-tracks
+            interval="35"
+            apikey="a263e64a80f18f5c518ed1867173dff4"
+            user="cbass9238"
+          >
+          </lastfm-tracks>
+        </div>
+      </div>
+    </div>
+    <img
+      src="flames.gif"
+      style="
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    />
+    <script src="title-rotator.js"></script>
+  </body>
+</html>
